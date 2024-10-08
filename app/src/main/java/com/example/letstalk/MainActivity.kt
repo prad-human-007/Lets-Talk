@@ -27,34 +27,10 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            LetsTalkTheme {
-                Surface (
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting(
-                        name = "Android",
-//                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
+
         }
     }
 }
 
-@Composable
-fun Greeting(name: String) {
-    LazyColumn (
-        modifier = Modifier.fillMaxSize()
-    ) {
-        items(30) { i ->
-            Text(
-                text = "Hello $name!",
-                modifier = Modifier
-                    .padding(8.dp)
-                    .fillMaxWidth()
-            )
-        }
-    }
-}
+
 
